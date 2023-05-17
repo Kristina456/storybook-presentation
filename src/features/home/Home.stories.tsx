@@ -3,7 +3,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import { Home } from './Home';
 
 const meta: Meta<typeof Home> = {
-  title: 'features/Home',
+  title: 'Features/Home',
   component: Home,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout

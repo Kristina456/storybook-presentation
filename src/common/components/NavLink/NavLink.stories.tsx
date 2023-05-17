@@ -2,7 +2,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import { NavLink } from './NavLink';
 
 export default {
-  title: 'Common/NavLink',
+  title: 'Common/Components/NavLink',
   component: NavLink,
   parameters: {
     layout: 'fullscreen',
