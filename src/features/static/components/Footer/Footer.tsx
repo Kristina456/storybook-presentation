@@ -1,7 +1,13 @@
+import './Footer.scss';
+
 interface Props {
-  item: string;
+  copyrightText: string;
 }
 
-export function Footer({ item }: Props) {
-  return <div>{item}</div>;
+export function Footer({ copyrightText }: Props) {
+  return (
+    <div className="footer">
+      <div className="footer__copyright">{copyrightText}</div>
+    </div>
+  );
 }

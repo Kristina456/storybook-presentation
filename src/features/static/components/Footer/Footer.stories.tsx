@@ -12,4 +12,6 @@ export default {
 const Template: StoryFn<typeof Footer> = args => <Footer {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  copyrightText: '©2023 All rights reserved.',
+};
