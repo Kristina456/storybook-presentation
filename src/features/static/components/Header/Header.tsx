@@ -20,7 +20,7 @@ export const Header = ({
   onCreateAccount,
 }: HeaderProps) => (
   <header>
-    <div className="storybook-header">
+    <div className="header">
       <div>
         <svg
           width="32"
