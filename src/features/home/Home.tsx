@@ -17,6 +17,7 @@ export const Home: React.FC = () => {
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
+        navigationLinks={['Home', 'About', 'Contact us']}
       />
       <section className="home__section">
         <h2 className="home__section-title">Home page</h2>

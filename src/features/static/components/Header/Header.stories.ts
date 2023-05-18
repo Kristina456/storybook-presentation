@@ -1,10 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Header } from './Header';
 
 const meta: Meta<typeof Header> = {
   title: 'Features/Static/Components/Header',
   component: Header,
-  tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
@@ -18,7 +17,12 @@ export const LoggedIn: Story = {
     user: {
       name: 'Jane Doe',
     },
+    navigationLinks: ['Home', 'About us', 'Careers'],
   },
 };
 
-export const LoggedOut: Story = {};
+export const LoggedOut: Story = {
+  args: {
+    navigationLinks: ['Home', 'About us', 'Careers'],
+  },
+};
