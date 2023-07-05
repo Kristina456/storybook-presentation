@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from '../../../../common/components/Button/Button';
 import './Header.scss';
-import { NavigationLinks } from '../../../../common/components';
+import { Button, NavigationLinks } from '../../../../common/components';
 
 type User = {
   name: string;
