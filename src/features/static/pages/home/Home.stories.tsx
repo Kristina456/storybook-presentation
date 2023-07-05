@@ -3,7 +3,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import { Home } from './Home';
 
 const meta: Meta<typeof Home> = {
-  title: 'Features/Home',
+  title: 'Features/Static/Pages/Home',
   component: Home,
   parameters: {
     layout: 'fullscreen',

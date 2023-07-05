@@ -1,7 +1,7 @@
 import React from 'react';
-import { Header } from '../static/components/Header/Header';
 import './Home.scss';
-import { Footer } from '../static/components/Footer/Footer';
+import { Footer, Header } from '../../components';
+
 
 type User = {
   name: string;
@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
       <footer>
-        <Footer copyrightText="©2023 All rights reserved."></Footer>
+        <Footer copyrightText="©2023 All rights reserved."/>
       </footer>
     </div>
   );
