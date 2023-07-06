@@ -9,7 +9,7 @@ export default {
   },
 } as Meta<typeof Footer>;
 
-const Template: StoryFn<typeof Footer> = args => <Footer {...args} />;
+const Template: StoryFn<typeof Footer> = args => <Footer />;
 
 export const Default = Template.bind({});
 Default.args = {
