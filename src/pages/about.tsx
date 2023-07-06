@@ -3,8 +3,8 @@ import type { NextPage } from 'next';
 
 interface Props {}
 
-const Contact: NextPage<Props> = () => {
+const AboutPage: NextPage<Props> = () => {
   return <About />;
 };
 
-export default Contact;
+export default AboutPage;
