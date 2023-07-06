@@ -1,10 +1,12 @@
-import { Home } from '@/features/static/pages/Home';
-import type { NextPage } from 'next';
+import { AppProps } from 'next/app';
+import '../common/styles/_index.css';
 
-interface Props {}
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <div>
+      <Component {...pageProps} />
+    </div>
+  );
+}
 
-const Contact: NextPage<Props> = () => {
-  return <Home />;
-};
-
-export default Contact;
+export default MyApp;
