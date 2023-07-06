@@ -11,10 +11,9 @@ const Template: StoryFn<typeof Form> = (args: any) => <Form {...args} />;
 
 export const EmptyForm = Template.bind({});
 
-export const InputedForm = Template.bind({});
+export const InputtedForm = Template.bind({});
 
-
-InputedForm.play = async ({ canvasElement }) => {
+InputtedForm.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
   await userEvent.type(canvas.getByTestId("email"), "test@gmail.com");
@@ -23,5 +22,4 @@ InputedForm.play = async ({ canvasElement }) => {
 
   await userEvent.click(canvas.getByRole("button"));
 
-  
 };

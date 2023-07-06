@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.scss';
+import styles from './Header.module.scss';
 import { Button, NavigationLinks } from '../../../../common/components';
 
 type User = {
@@ -22,12 +22,12 @@ export function Header({
   navigationLinks,
 }: HeaderProps) {
   return (
-    <header className="header">
+    <header className={styles["header"]}>
       <NavigationLinks items={navigationLinks} />
-      <div className="header__buttons">
+      <div className={styles["header__buttons"]}>
         {user ? (
           <>
-            <span className="welcome">
+            <span className={styles["header__welcome-text"]}>
               Welcome, <b>{user.name}</b>!
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />

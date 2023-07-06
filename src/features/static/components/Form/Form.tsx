@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from '../../../../common/components';
-import "./Form.scss";
+import styles from "./Form.module.scss";
 
 interface FormProps {
   placeholder?: string;
@@ -9,7 +9,6 @@ interface FormProps {
 }
 
 export function Form(props: FormProps) {
-
   const [details, setDetails] = React.useState(false);
 
   const onClick = () => {
@@ -17,11 +16,11 @@ export function Form(props: FormProps) {
   };
 
   return (
-    <div className="form__wrapper">
+    <div className={styles["form__wrapper"]}>
       <input
         autoComplete="off"
         placeholder="Enter your email address"
-        className={"storybook-input"}
+        className={styles["storybook-input"]}
         name="email"
         aria-label="email"
         id="email"
@@ -31,7 +30,7 @@ export function Form(props: FormProps) {
       <input
         autoComplete="off"
         placeholder="Enter your password"
-        className={"storybook-input"}
+        className={styles["storybook-input"]}
         name="password"
         id="password"
         data-testid="password"

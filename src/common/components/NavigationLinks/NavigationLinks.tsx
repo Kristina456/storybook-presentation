@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavigationLinks.scss';
+import styles from'./NavigationLinks.module.scss';
 
 interface Props {
   items: any[];
@@ -11,10 +11,10 @@ export function NavigationLinks({ items }: Props) {
   }
 
   return (
-    <div className="nav-links">
-      <ul className="nav-links__list">
+    <div className={styles["nav-links"]}>
+      <ul className={styles["nav-links__list"]}>
         {items.map((item, index) => (
-          <li key={index} className="nav-links__item">
+          <li key={index} className={styles["nav-links__item"]}>
             {item}
           </li>
         ))}

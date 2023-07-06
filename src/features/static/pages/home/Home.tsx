@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.scss';
+import styles from './Home.module.scss';
 import { Footer, Header } from '../../components';
 
 
@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
-    <div className="home">
+    <div className={styles["home"]}>
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
@@ -19,8 +19,8 @@ export const Home: React.FC = () => {
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
         navigationLinks={['Home', 'About', 'Contact us']}
       />
-      <section className="home__section">
-        <h2 className="home__section-title">Home page</h2>
+      <section className={styles["home__section"]}>
+        <h2 className={styles["home__section-title"]}>Home page</h2>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad nisi
           delectus assumenda quisquam, nihil voluptas quam deserunt repudiandae

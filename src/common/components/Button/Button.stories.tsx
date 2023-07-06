@@ -9,6 +9,27 @@ const meta: Meta<typeof Button> = {
       control: 'color',
     },
   },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'red', value: '#f00' },
+        { name: 'green', value: '#0f0' },
+        { name: 'blue', value: '#00f' },
+      ],
+    },
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ outline: "5px dotted black"}}>
+        <Story />
+      </div>
+    ),
+    (Story) => (
+      <div style={{ padding: '3em' , backgroundColor: "blue", }}>
+        <Story />
+      </div>
+    ),
+  ]
 };
 
 export default meta;
@@ -25,6 +46,13 @@ export const Secondary: Story = {
   args: {
     label: 'Button',
   },
+  decorators: [
+    (Story) => (
+      <div style={{ padding: '3em' , backgroundColor: "yellow", }}>
+        <Story />
+      </div>
+    ),
+  ]
 };
 
 export const Large: Story = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+import styles from './Button.module.scss';
 import classNames from 'classnames';
 
 interface ButtonProps {
@@ -18,9 +18,9 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const buttonStyle = classNames(
-    'button',
-    `button--${size}`,
-    primary ? 'button--primary' : 'button--secondary'
+    styles['button'],
+    styles[`button--${size}`],
+    primary ? styles['button--primary'] : styles['button--secondary']
   );
 
   return (
