@@ -15,5 +15,9 @@ const Template: StoryFn<typeof NavigationLinks> = args => (
 
 export const Default = Template.bind({});
 Default.args = {
-  items: ['Home', 'About us', 'Careers'],
+  items: [
+    { name: 'Home', href: 'home' },
+    { name: 'About us', href: 'about' },
+    { name: 'Careers', href: 'careers' },
+  ],
 };

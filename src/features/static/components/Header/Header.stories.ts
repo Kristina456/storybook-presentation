@@ -17,12 +17,9 @@ export const LoggedIn: Story = {
     user: {
       name: 'Jane Doe',
     },
-    navigationLinks: ['Home', 'About us', 'Careers'],
   },
 };
 
 export const LoggedOut: Story = {
-  args: {
-    navigationLinks: ['Home', 'About us', 'Careers'],
-  },
+  args: {},
 };
