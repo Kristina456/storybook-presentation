@@ -11,7 +11,6 @@ interface HeaderProps {
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;
-  navigationLinks: any;
 }
 
 export function Header({
@@ -19,15 +18,19 @@ export function Header({
   onLogin,
   onLogout,
   onCreateAccount,
-  navigationLinks,
 }: HeaderProps) {
   return (
-    <header className={styles["header"]}>
-      <NavigationLinks items={navigationLinks} />
-      <div className={styles["header__buttons"]}>
+    <header className={styles['header']}>
+      <NavigationLinks
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'About', href: 'about' },
+        ]}
+      />
+      <div className={styles['header__buttons']}>
         {user ? (
           <>
-            <span className={styles["header__welcome-text"]}>
+            <span className={styles['header__welcome-text']}>
               Welcome, <b>{user.name}</b>!
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />

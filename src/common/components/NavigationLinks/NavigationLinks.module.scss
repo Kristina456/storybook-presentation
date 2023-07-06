@@ -6,4 +6,9 @@
 .nav-links__item {
   cursor: pointer;
   padding-left: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
 }
