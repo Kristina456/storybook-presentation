@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import { Button } from '../../../../common/components';
-import styles from "./Form.module.scss";
+import styles from './Form.module.scss';
 
 interface FormProps {
   placeholder?: string;
@@ -16,11 +16,11 @@ export function Form(props: FormProps) {
   };
 
   return (
-    <div className={styles["form__wrapper"]}>
+    <div className={styles['form__wrapper']}>
       <input
         autoComplete="off"
         placeholder="Enter your email address"
-        className={styles["storybook-input"]}
+        className={styles['form__storybook-input']}
         name="email"
         aria-label="email"
         id="email"
@@ -30,7 +30,7 @@ export function Form(props: FormProps) {
       <input
         autoComplete="off"
         placeholder="Enter your password"
-        className={styles["storybook-input"]}
+        className={styles['form__storybook-input']}
         name="password"
         id="password"
         data-testid="password"
@@ -38,12 +38,10 @@ export function Form(props: FormProps) {
       />
       <Button onClick={() => onClick()} label="Submit"></Button>
       {details === true ? (
-        <p>
-          You have successfully submitted the form 😊 
-        </p>
+        <p>You have successfully submitted the form 😊</p>
       ) : (
-        ""
+        ''
       )}
     </div>
   );
-};
+}

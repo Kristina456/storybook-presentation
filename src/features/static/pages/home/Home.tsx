@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Home.module.scss';
 import { Footer, Header } from '../../components';
 
-
 type User = {
   name: string;
 };
@@ -11,16 +10,15 @@ export const Home: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
-    <div className={styles["home"]}>
+    <div className={styles['home']}>
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
-        navigationLinks={['Home', 'About', 'Contact us']}
       />
-      <section className={styles["home__section"]}>
-        <h2 className={styles["home__section-title"]}>Home page</h2>
+      <section className={styles['home__section']}>
+        <h2 className={styles['home__section-title']}>Home page</h2>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad nisi
           delectus assumenda quisquam, nihil voluptas quam deserunt repudiandae
@@ -42,7 +40,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
       <footer>
-        <Footer copyrightText="©2023 All rights reserved."/>
+        <Footer />
       </footer>
     </div>
   );
