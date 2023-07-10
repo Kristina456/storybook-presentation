@@ -7,7 +7,7 @@ export default {
   component: Form,
 } as Meta<typeof Form>;
 
-const Template: StoryFn<typeof Form> = (args: any) => <Form {...args} />;
+const Template: StoryFn<typeof Form> = args => <Form {...args} />;
 
 export const EmptyForm = Template.bind({});
 

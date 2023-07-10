@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './NavigationLinks.module.scss';
 
+interface Item {
+  name: string;
+  href: string;
+}
 interface Props {
-  items: any[];
+  items: Item[];
 }
 
 export function NavigationLinks({ items }: Props) {
