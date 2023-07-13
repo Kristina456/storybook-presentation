@@ -19,3 +19,10 @@ Starts the development server
 
 Starts the storybook server
   
+  ### `build-storybook`
+
+Build Storybook as a static web application
+
+  ### `web-server`
+
+Storybook will create a static web application capable of being served by any web server
