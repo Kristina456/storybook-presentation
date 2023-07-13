@@ -16,9 +16,13 @@ export const InputtedForm = Template.bind({});
 InputtedForm.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
-  await userEvent.type(canvas.getByTestId('email'), 'test@gmail.com');
+  await userEvent.type(canvas.getByTestId('email'), 'test@gmail.com', {
+    delay: 100,
+  });
 
-  await userEvent.type(canvas.getByTestId('password'), 'password');
+  await userEvent.type(canvas.getByTestId('password'), 'password', {
+    delay: 200,
+  });
 
   await userEvent.click(canvas.getByRole('button'));
 };
